@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mail > Enkripsi-Dekrips</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="heading">
+        <h1 class="title">RC4 Algorithm In Encrypt and Dekrypt</h1>
+    </div>
+    <div class="container">
+        <label for="text">Text:</label>
+        <textarea id="text" placeholder="Enter Message"></textarea>
+        <label for="key">Key:</label>
+        <input type="text" id="key" placeholder="Enter Key" autocomplete="off" required>
+        <button onclick="encryptdecrypt()">Encrypt/Decrypt</button>
+        <button onclick="clearFields()">Clear</button>
+        <div class="result">
+            <h2>Result:</h2>
+            <textarea id="result" placeholder="Your Result" readonly></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>   
+</body>
+
+</html>
